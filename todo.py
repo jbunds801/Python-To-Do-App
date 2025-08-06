@@ -27,6 +27,9 @@ def add_tasks():
 
 
 def remove_tasks():
+    if not todo_list:
+        view_tasks()
+        return
     try:
         task = input("remove task: ").strip()
         todo_list.remove(task)
