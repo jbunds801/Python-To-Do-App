@@ -2,8 +2,10 @@ todo_list = []
 
 
 def welcome():
+    print("-" * 20)
     print("Thanks for using our ToDo App!")
     name = input("Enter your name to log in: ").strip()
+    print("-" * 20)
     print(f"Welcome {name}!")
 
 
@@ -40,8 +42,10 @@ def remove_tasks():
 welcome()
 
 while True:
+    print("-" * 20)
     print("What would you like to do:")
     choice = input("'View', 'add', 'remove' tasks, or 'exit'?: ").strip().lower()
+    print("-" * 20)
     if choice == "view":
         view_tasks()
     elif choice == "add":
@@ -50,6 +54,8 @@ while True:
         remove_tasks()
     elif choice == "exit":
         print("Bye bye! Please log back in to start over")
+        print("-" * 20)
         break
     else:
         print("Invalid entry: Please try again")
+       
